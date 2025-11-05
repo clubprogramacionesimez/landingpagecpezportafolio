@@ -117,30 +117,6 @@ img {
   background-color: var(--color-primary);
   color: var(--color-background);
 }
-/* ===================================
-   RESPONSIVE – CELULAR Y TABLET
-   =================================== */
-
-@media (max-width: 768px) {
-
-  .navbar .container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav-menu {
-    flex-direction: column;
-    width: 100%;
-    padding-top: var(--spacing-sm);
-    gap: var(--spacing-xs);
-  }
-
-  .nav-menu a {
-    display: block;
-    width: 100%;
-    padding: var(--spacing-sm);
-  }
-}
 
 /* ===================================
    HERO SECTION
@@ -821,6 +797,8 @@ section {
 }
 
 @media (max-width: 480px) {
+
+  /* tus ajustes de espacios y texto */
   :root {
     --spacing-lg: 3rem;
     --spacing-xl: 4rem;
@@ -837,4 +815,27 @@ section {
   .btn {
     width: 100%;
   }
+
+  /* ==============================
+     NAVBAR 
+     ============================== */
+
+  .navbar .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    width: 100%;
+    gap: var(--spacing-xs);
+    padding-top: var(--spacing-sm);
+  }
+
+  .nav-menu a {
+    width: 100%;
+    display: block;
+    padding: var(--spacing-sm);
+  }
 }
+
